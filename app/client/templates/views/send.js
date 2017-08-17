@@ -146,7 +146,7 @@ Template['views_send'].onCreated(function(){
 
 Template['views_send'].onRendered(function(){
     var template = this;
-
+    
     // focus address input field
     if(FlowRouter.getParam('address')) {
         this.find('input[name="to"]').value = FlowRouter.getParam('address');
